@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+    --spacing: 1.5em 2em;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: px solid black;
+    box-shadow: var(--shadow);
+    padding: var(--spacing);
+}
+
+.website-name{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 70px;
+}
+
+.button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.login-btn{
+    color: whitesmoke;
+    background-color:rgb(140, 37, 237);
+}
+
+.add-book{
+    color: black;
+    background-color:rgb(244, 224, 200);
+}
+
+.login-btn:hover{
+    background-color:rgb(159, 94, 220);
+}
+
+.add-book:hover{
+    background-color:rgb(227, 178, 118);
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+}
