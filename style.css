@@ -59,3 +59,55 @@ nav{
     justify-content: center;
     margin-top: 5em;
 }
+
+.book-details-container{
+    display: none; /* To be made visible when "Add a Book" button is clicked */
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(244, 230, 214);
+    padding: 2em;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.book-details{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+label{
+    display: inline-block;
+    width: 40%;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    user-select: none;
+}
+
+input{
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.check-label{
+    width: 10%;
+    text-align: right;
+}
+
+.box-heading{
+    text-align: center;
+}
+
+.submit-btn{
+    background-color: #ffa735;
+    color: azure;
+}
+
+.submit-btn:hover{
+    background-color: #ffbf6b;
+}
