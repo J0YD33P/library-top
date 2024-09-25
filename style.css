@@ -35,7 +35,8 @@ nav{
     font-weight: 700;
 }
 
-.login-btn{
+.login-btn,
+.js-read-btn{
     color: whitesmoke;
     background-color:rgb(140, 37, 237);
 }
@@ -45,8 +46,13 @@ nav{
     background-color:rgb(244, 224, 200);
 }
 
-.login-btn:hover{
+.login-btn:hover,
+.js-read-btn{
     background-color:rgb(159, 94, 220);
+}
+
+.js-not-read-btn{
+    background-color:rgb(135, 198, 243);
 }
 
 .add-book:hover{
@@ -116,5 +122,31 @@ input{
     margin: 4em;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
+
+/* Styling for JavaScript elements */
+
+.new-book-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(244, 230, 214);
+    padding: 2em;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.js-read-btn,
+.js-remove-btn{
+    width: 250px;
+}
+
+.js-remove-btn{
+    color: whitesmoke;
+    background-color:rgb(246, 86, 158);
+}
+
