@@ -125,6 +125,19 @@ input{
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #8f7f7f;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
 /* Styling for JavaScript elements */
 
 .new-book-card{
