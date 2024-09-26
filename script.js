@@ -3,7 +3,6 @@ const addBookButton = document.querySelector(".add-book");
 const bookDetailsContainer = document.querySelector(".book-details-container");
 const bookForm = document.querySelector(".book-details-container");
 
-
 function Book(title, author, pages, readBook){
     this.title = title;
     this.author = author;
