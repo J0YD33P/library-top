@@ -102,7 +102,16 @@ bookGrid.addEventListener("click", (event) =>{
         }
 
         else{
-            console.log(event.target.parentElement.dataset.array);               
+            myLibrary.splice(event.target.parentElement.dataset.array, 1);
+            const removeBookCard = document.querySelector(`.new-book-card[data-array="${event.target.parentElement.dataset.array}"]`);
+            removeBookCard.remove();
+
+            const allBookCards = document.querySelectorAll(".new-book-card");
+            allBookCards.forEach((card, index) => {
+                console.log(`Index: ${index}`);
+                console.log(`Book: ${card.dataset.array}`);
+                card.dataset.array = index; // Update the data-array attribute to the new index
+            });      
         }
     }    
 });
